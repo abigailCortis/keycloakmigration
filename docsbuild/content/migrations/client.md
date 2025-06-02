@@ -60,9 +60,11 @@ Delete a client in keycloak
 Imports a client using the json representation.
 
 ### Parameters
-- realm: String, optional
-- clientRepresentationJsonFilename: String, not optional
-- relativeToFile: Boolean, optional, default=true
+| Parameter Name                   | Type    | Optional? | Default Value |
+|----------------------------------|---------|-----------|---------------|
+| realm                            | String  | Yes       |               |
+| clientRepresentationJsonFilename | String  | No        |               |
+| relativeToFile                   | Boolean | Yes       | true          |
 
 ### Example
 ```yaml
