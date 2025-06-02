@@ -8,18 +8,22 @@ permalink: /migrations/client/
 # Client Migrations
 All migrations referring to the client resource.
 ## addSimpleClient
-Simple command to add a client to keycloak, TODO: add more fields
+Simple command to add a client to keycloak.
+
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional,
-- enabled: Boolean, optional, default=true
-- attributes: Map< String, String>, optional, default = empty
-- protocol: String, optional, default="openid-connect"
-- secret: String, optional
-- publicClient: Boolean, optional, default=true
-- redirectUris: List< String>, optional, default=empty
-- authorizationServicesEnabled: Boolean, optional, default=false
-- serviceAccountsEnabled: Boolean, optional, default=true
+| Parameter Name               | Type                 | Optional? | Default Value    |
+|------------------------------|----------------------|-----------|------------------|
+| realm                        | String               | Yes       |                  |
+| clientId                     | String               | No        |                  |
+| enabled                      | Boolean              | Yes       | true             |
+| attributes                   | Map< String, String> | Yes       | empty            |
+| protocol                     | String               | Yes       | "openid-connect" |
+| secret                       | String               | Yes       |                  |
+| publicClient                 | Boolean              | Yes       | true             |
+| redirectUris                 | List< String>        | Yes       | empty            |
+| authorizationServicesEnabled | Boolean              | Yes       | false            |
+| serviceAccountsEnabled       | Boolean              | Yes       | true             |
+
 ### Example
 ```yaml
     id: add-simple-client
@@ -29,6 +33,9 @@ Simple command to add a client to keycloak, TODO: add more fields
         realm: master
         clientId: test
 ```
+
+### Further Enhancements
+- add more fields
 
 ## deleteClient
 Delete a client in keycloak
