@@ -128,10 +128,12 @@ Update a client
 Assigns a realm- or client-role(if roleClientId is set) to a service account of a client.
 
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional
-- role: String, not optional
-- roleClientId: String, optional, default = realmRole
+| Parameter Name | Type   | Optional? | Default Value |
+|----------------|--------|-----------|---------------|
+| realm          | String | Yes       |               |
+| clientId       | String | No        |               |
+| role           | String | No        |               |
+| roleClientId   | String | Yes       | realmRole     |
 
 ### Example
 ```yaml
