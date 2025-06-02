@@ -39,9 +39,13 @@ Simple command to add a client to keycloak.
 
 ## deleteClient
 Delete a client in keycloak
+
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional,
+| Parameter Name | Type   | Optional? |
+|----------------|--------|-----------|
+| realm          | String | Yes       |
+| clientId       | String | No        |
+
 ### Example
 ```yaml
     id: delete-client
