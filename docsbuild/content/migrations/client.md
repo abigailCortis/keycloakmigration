@@ -81,33 +81,35 @@ Imports a client using the json representation.
 Update a client
 
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional
-- name: String, optional, default=no change
-- description: String, optional, default=no change
-- surrogateAuthRequired: Boolean, optional, default=no change
-- enabled: Boolean, optional, default=no change
-- alwaysDisplayInConsole: Boolean, optional, default=no change
-- clientAuthenticatorType: String, optional, default=no change
-- attributes: Map<String, String>, optional, default=no change
-- protocol: String, optional, default=no change
-- redirectUris: List< String>, optional, default=no change
-- notBefore: Boolean, optional, default=no change
-- bearerOnly: Boolean, optional, default=no change
-- consentRequired: Boolean, optional, default=no change
-- directAccessGrantEnabled: Boolean, optional, default=no change
-- implicitFlowEnabled: Boolean, optional, default=no change
-- standardFlowEnabled: Boolean, optional, default=no change
-- adminUrl: String, optional, default=no change
-- baseUrl: String, optional, default=no change
-- rootUrl: String, optional, default=no change
-- publicClient: Boolean, optional, default=no change
-- frontchannelLogout: Boolean, optional, default=no change
-- serviceAccountsEnabled: Boolean, optional, default=no change
-- webOrigins: List< String>, optional, default=no change
-- fullScopeAllowed: Boolean, optional, default=no change
-- nodeReRegistrationTimeout: Int, optional, default=no change
-- authorizationServicesEnabled: Boolean, optional, default=no change
+| Parameter Name               | Type                | Optional? | Default Value |
+|------------------------------|---------------------|-----------|---------------|
+| realm                        | String              | Yes       |               |
+| clientId                     | String              | No        |               |
+| name                         | String              | Yes       | _no change_   |
+| description                  | String              | Yes       | _no change_   |
+| surrogateAuthRequired        | Boolean             | Yes       | _no change_   |
+| enabled                      | Boolean             | Yes       | _no change_   |
+| alwaysDisplayInConsole       | Boolean             | Yes       | _no change_   |
+| clientAuthenticatorType      | String              | Yes       | _no change_   |
+| attributes                   | Map<String, String> | Yes       | _no change_   |
+| protocol                     | String              | Yes       | _no change_   |
+| redirectUris                 | List< String>       | Yes       | _no change_   |
+| notBefore                    | Boolean             | Yes       | _no change_   |
+| bearerOnly                   | Boolean             | Yes       | _no change_   |
+| consentRequired              | Boolean             | Yes       | _no change_   |
+| directAccessGrantEnabled     | Boolean             | Yes       | _no change_   |
+| implicitFlowEnabled          | Boolean             | Yes       | _no change_   |
+| standardFlowEnabled          | Boolean             | Yes       | _no change_   |
+| adminUrl                     | String              | Yes       | _no change_   |
+| baseUrl                      | String              | Yes       | _no change_   |
+| rootUrl                      | String              | Yes       | _no change_   |
+| publicClient                 | Boolean             | Yes       | _no change_   |
+| frontchannelLogout           | Boolean             | Yes       | _no change_   |
+| serviceAccountsEnabled       | Boolean             | Yes       | _no change_   |
+| webOrigins                   | List< String>       | Yes       | _no change_   |
+| fullScopeAllowed             | Boolean             | Yes       | _no change_   |
+| nodeReRegistrationTimeout    | Int                 | Yes       | _no change_   |
+| authorizationServicesEnabled | Boolean             | Yes       | _no change_   |
 
 ### Example
 ```yaml
