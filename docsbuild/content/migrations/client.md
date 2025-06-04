@@ -358,16 +358,18 @@ adds a group-membership clientmapper, throws error if client or realm doesn't ex
 adds a user-attribute clientmapper, throws error if client or realm doesn't exist or mapper with same name already exists
 
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional
-- name: String, not optional
-- userAttribute: String, not optional
-- addToIdToken: Boolean , optional, default = true,
-- addToAccessToken: Boolean, optional, default = true,
-- addToUserInfo: Boolean, optional, default = true,
-- claimName: String?, optional, default = << name parameter>>
-- multivalued: Boolean, optional, default = false,
-- aggregateAttributeValues: Boolean, optional, default = true
+| Parameter Name           | Type    | Optional? | Default Value       |
+|--------------------------|---------|-----------|---------------------|
+| realm                    | String  | Yes       |                     |
+| clientId                 | String  | No        |                     |
+| name                     | String  | No        |                     |
+| userAttribute            | String  | No        |                     |
+| addToIdToken             | Boolean | Yes       | true                |
+| addToAccessToken         | Boolean | Yes       | true                |
+| addToUserInfo            | Boolean | Yes       | true                |
+| claimName                | String? | Yes       | << name parameter>> |
+| multivalued              | Boolean | Yes       | false               |
+| aggregateAttributeValues | Boolean | Yes       | true                |
 
 ### Example:
 ```yaml
