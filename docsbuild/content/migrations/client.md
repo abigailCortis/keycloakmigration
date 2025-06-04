@@ -230,14 +230,14 @@ Adds a full configurable clientmapper, throws error if client or realm doesn't e
 > Only use this action if you can't find a convenient method to add the mapper below
 
 ### Parameters
-| Parameter Name | Type               | Optional? | Default Value    |
-|----------------|--------------------|-----------|------------------|
-| realm          | String             | Yes       |                  |
-| clientId       | String             | No        |                  |
-| name           | String             | No        |                  |
-| config         | Map<String,String> | No        |                  |
-| protocolMapper | String             | No        |                  |
-| protocol       | String             | Yes       | "openid-connect" |ß
+| Parameter Name | Type               | Optional? | Default Value    |   |
+|----------------|--------------------|-----------|------------------|---|
+| realm          | String             | Yes       |                  |   |
+| clientId       | String             | No        |                  |   |
+| name           | String             | No        |                  |   |
+| config         | Map<String,String> | No        |                  |   |
+| protocolMapper | String             | No        |                  |   |
+| protocol       | String             | Yes       | "openid-connect" | ß |
 
 ### Example:
 ```yaml
@@ -264,9 +264,11 @@ Adds a full configurable clientmapper, throws error if client or realm doesn't e
 deletes a client mapper
 
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional
-- name: String, not optional
+| Parameter Name | Type   | Optional? |
+|----------------|--------|-----------|
+| realm          | String | Yes       |
+| clientId       | String | No        |
+| name           | String | No        |
 
 ### Example:
 ```yaml
