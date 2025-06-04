@@ -194,10 +194,12 @@ Deletes a realm- or client-role(if roleClientId is set) from the scope mappings 
 See https://www.keycloak.org/docs/latest/server_admin/#_role_scope_mappings
 
 ### Parameters
-- realm: String, optional
-- role: String, not optional
-- clientId: String, not optional
-- roleClientId: String, optional, default = realmRole
+| Parameter Name | Type   | Optional? | Default Value |
+|----------------|--------|-----------|---------------|
+| realm          | String | Yes       |               |
+| role           | String | No        |               |
+| clientId       | String | No        |               |
+| roleClientId   | String | Yes       | realmRole     |
 
 ### Example
 ```yaml
