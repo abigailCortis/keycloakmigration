@@ -159,10 +159,12 @@ Adds a realm- or client-role(if roleClientId is set) to the scope mappings of a 
 See https://www.keycloak.org/docs/latest/server_admin/#_role_scope_mappings
 
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional
-- role: String, not optional
-- roleClientId: String, optional, default = realmRole
+| Parameter Name | Type   | Optional? | Default Value |
+|----------------|--------|-----------|---------------|
+| realm          | String | Yes       |               |
+| clientId       | String | No        |               |
+| role           | String | No        |               |
+| roleClientId   | String | Yes       | realmRole     |
 
 ### Example
 ```yaml
