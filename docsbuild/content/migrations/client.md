@@ -419,10 +419,12 @@ adds a user-realm-role clientmapper, throws error if client or realm doesn't exi
 Imports authorization configuration using the JSON representation
 
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional
-- authorizationRepresentationJsonFilename: String, not optional
-- relativeToFile: Boolean, optional, default=true
+| Parameter Name                          | Type    | Optional? | Default Value |
+|-----------------------------------------|---------|-----------|---------------|
+| realm                                   | String  | Yes       |               |
+| clientId                                | String  | No        |               |
+| authorizationRepresentationJsonFilename | String  | No        |               |
+| relativeToFile                          | Boolean | Yes       | true          |
 
 ### Example:
 ```yaml
