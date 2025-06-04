@@ -298,13 +298,15 @@ deletes a client mapper
 adds a audience clientmapper, throws error if client or realm doesn't exist or mapper with same name already exists
 
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional
-- name: String, not optional
-- addToIdToken: Boolean , optional, default = true,
-- addToAccessToken: Boolean, optional, default = true,
-- clientAudience: String, optional, default = "",
-- customAudience: String, optional, default = ""
+| Parameter Name   | Type    | Optional? | Default Value |
+|------------------|---------|-----------|---------------|
+| realm            | String  | Yes       |               |
+| clientId         | String  | No        |               |
+| name             | String  | No        |               |
+| addToIdToken     | Boolean | Yes       | true          |
+| addToAccessToken | Boolean | Yes       | true          |
+| clientAudience   | String  | Yes       | ""            |
+| customAudience   | String  | Yes       | ""            |
 
 ### Example:
 ```yaml
