@@ -225,17 +225,19 @@ See https://www.keycloak.org/docs/latest/server_admin/#_role_scope_mappings
 ```
 
 ## addClientMapper
-adds a full configurable clientmapper, throws error if client or realm doesn't exist or mapper with same name already exists
+Adds a full configurable clientmapper, throws error if client or realm doesn't exist or mapper with same name already exists
 
 > Only use this action if you can't find a convenient method to add the mapper below
 
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional
-- name: String, not optional
-- config: Map<String,String>, not optional
-- protocolMapper: String, not optional
-- protocol: String, optional, default="openid-connect"
+| Parameter Name | Type               | Optional? | Default Value    |
+|----------------|--------------------|-----------|------------------|
+| realm          | String             | Yes       |                  |
+| clientId       | String             | No        |                  |
+| name           | String             | No        |                  |
+| config         | Map<String,String> | No        |                  |
+| protocolMapper | String             | No        |                  |
+| protocol       | String             | Yes       | "openid-connect" |ß
 
 ### Example:
 ```yaml
