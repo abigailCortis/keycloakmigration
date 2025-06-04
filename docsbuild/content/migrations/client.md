@@ -328,14 +328,16 @@ adds a audience clientmapper, throws error if client or realm doesn't exist or m
 adds a group-membership clientmapper, throws error if client or realm doesn't exist or mapper with same name already exists
 
 ### Parameters
-- realm: String, optional
-- clientId: String, not optional
-- name: String, not optional
-- addToIdToken: Boolean , optional, default = true,
-- addToAccessToken: Boolean, optional, default = true,
-- addToUserInfo: Boolean, optional, default = true,
-- fullGroupPath: Boolean, optional, default = true,
-- claimName: String?, optional, default = << name parameter>>
+| Parameter Name   | Type    | Optional? | Default Value       |
+|------------------|---------|-----------|---------------------|
+| realm            | String  | Yes       |                     |
+| clientId         | String  | No        |                     |
+| name             | String  | No        |                     |
+| addToIdToken     | Boolean | Yes       | true                |
+| addToAccessToken | Boolean | Yes       | true                |
+| addToUserInfo    | Boolean | Yes       | true                |
+| fullGroupPath    | Boolean | Yes       | true                |
+| claimName        | String? | Yes       | << name parameter>> |
 
 ### Example:
 ```yaml
