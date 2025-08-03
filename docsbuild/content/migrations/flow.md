@@ -96,22 +96,26 @@ For an update of the flow `alias` use the oldAlias as `alias` and the newAlias i
 
 ### Parameters
 
-- realm: String, optional
-- alias: String, not optional
-- newAlias: String, optional, default = no update
-- description: String, default = no update
-- buildIn: Boolean, optional, default = no update,
-- providerId: String, optional, default = no update,
-- topLevel: Boolean, optional, default = no update,
-- executions: List< AuthenticationExecutionImport >, default = no update
+| Parameter Name | Type | Optional? | Default Value |
+| --- | --- | --- | --- |
+| realm | String | Yes | |
+| alias | String | No | |
+| newAlias | String | Yes | no update |
+| description | String | Yes | no update |
+| buildIn | Boolean| Yes| no update|
+| providerId | String | Yes|  no update|
+| topLevel| Boolean | Yes| no update|
+| executions | List< AuthenticationExecutionImport > | Yes |  no update |
 
 #### subclass AuthenticationExecutionImport
 
-- requirement: Flow.Requirement = "ALTERNATIVE" | "DISABLED" | "REQUIRED" | "CONDITIONAL" | "OPTIONAL"
-- providerId: String = see providers in AddFlow action
-- level: Int
-- index: Int
-- config: Map<String, String>, optional, default = empty
+| Parameter Name | Type                | Optional? | Values                                                                                                       | Default Value |
+| -------------- | ------------------- | --------- | ------------------------------------------------------------------------------------------------------------ | ------------- |
+| requirement    | Flow.Requirement    | No        | <ul><li>'ALTERNATIVE'</li><li>'DISABLED'</li><li>'REQUIRED'</li><li>'CONDITIONAL'</li><li>'OPTIONAL</li><ul> |               |
+| providerId     | String              | No        | [see providers in AddFlow action](#known-flow-providers-on-release-09042021)                                            |               |
+| level          | Int                 | No        |                                                                                                              |               |
+| index          | Int                 | No        |                                                                                                              |               |
+| config         | Map<String, String> | Yes       |                                                                                                              | empty         |
 
 ### Example
 
