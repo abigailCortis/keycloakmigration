@@ -148,8 +148,10 @@ Deletes a flow, if one with this alias exists
 
 ### Parameters
 
-- realm: String, optional
-- alias: String, not optional
+| Parameter | Type | Optional? |
+| --- | --- | --- |
+| realm | String| Yes|
+| alias | String| No|
 
 ### Example
 
