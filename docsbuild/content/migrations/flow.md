@@ -177,9 +177,11 @@ Copies an authentication flow
 
 ### Parameters
 
-- realm: String, optional
-- flowAlias: String, not optional
-- newName: String, not optional
+| Parameter Name | Type | Optional? |
+|---|---|---|
+| realm | String | Yes |
+| flowAlias | String | No |
+| newName | String | No |
 
 ### Example
 
